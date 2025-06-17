@@ -6,15 +6,16 @@
 
 ## 專案結構
 ```
-├── main.py                      # 主控制程式（含模型推理 + 警報觸發
-├── config.ini                   # 系統參數設定檔
-├── detect.py / capture.py      # 攝影機串流與偵測核心模組
+├── main.py                   # 主控系統程式（程式 2）
+├── demo_yolo_cam.py          # 測試攝影機辨識（程式 1）
+├── config.ini                # 系統參數設定
+├── requirements.txt          # 套件依賴清單
+├── classes.txt               # 類別定義（0: knife）
 ├── utils/
-│   └── notify.py                # Teams & LINE 推播模組
-│   └── rs232.py                 # RS232 控制模組
-├── logs/                        # 紀錄辨識結果的截圖與座標
-├── classes.txt                  # 分類類別定義
-└── requirements.txt             # 相依套件清單
+│   ├── notify.py             # Teams & LINE 警報模組
+│   └── rs232.py              # RS232 控制模組
+├── detect.py / capture.py    # YOLO 推理與影像擷取模組（可整合 main.py）
+└── logs/                     # 紀錄辨識結果（圖片與座標）
 ```
 ## 系統功能與特色
 
