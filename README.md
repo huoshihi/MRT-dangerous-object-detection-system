@@ -93,6 +93,15 @@ Channel = 安全室
 
 -Create_folder_and_classestxt()	          自動建立資料夾與類別說明檔
 
+## 訓練的環境配置
+
+![image](https://github.com/user-attachments/assets/49292ecd-0719-4378-8f37-1a7f707a227f)
+
+![image](https://github.com/user-attachments/assets/a4a85680-688d-41ea-ae03-d05d0bb6b042)
+
+![image](https://github.com/user-attachments/assets/f370d4f7-7d71-40d0-89a5-0adec8233355)
+
+
 ## 成果預覽（訓練/推論）
 
 ![image](https://github.com/user-attachments/assets/ae88c73c-4a34-4778-92cd-ea62e246cbfd)
