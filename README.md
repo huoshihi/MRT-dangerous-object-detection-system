@@ -110,9 +110,20 @@ FPS	52
 -圖片標註與事件紀錄皆可導出
 
 ## 實例截圖
-![image](https://github.com/user-attachments/assets/8c8472df-3d92-436f-8639-9cb381cb4e90)
-![image](https://github.com/user-attachments/assets/86931f97-b219-430a-9513-a9c2e79a0d08)
+![image](https://github.com/user-attachments/assets/4d2f5b13-ce2c-437b-b9f9-09f514ca2a5d)
+
+![image](https://github.com/user-attachments/assets/1694c2f8-300c-4163-9091-39ddde59c695)
+
 ![image](https://github.com/user-attachments/assets/abb4f002-416e-4ef1-8318-c3615c0304df)
+
+![image](https://github.com/user-attachments/assets/1127461c-d6d6-4505-96ae-d61bd20971d6)
+
+![image](https://github.com/user-attachments/assets/faf5506e-8300-468c-bdb1-43c78bdddc2e)
+
+![image](https://github.com/user-attachments/assets/27ea76a0-0f46-484d-9d99-703e7db12ace)
+
+
+
 
 https://github.com/user-attachments/assets/2a0fdcb6-c2ef-4011-b429-54e390ead90c
 
