@@ -6,8 +6,8 @@
 
 ## 專案結構
 ```
-├── main.py                   # 主控系統程式（程式 2）
-├── demo_yolo_cam.py          # 測試攝影機辨識（程式 1）
+├── main.py                   # 主控系統程式
+├── demo_yolo_cam.py          # 測試攝影機辨識
 ├── config.ini                # 系統參數設定
 ├── requirements.txt          # 套件依賴清單
 ├── classes.txt               # 類別定義（0: knife）
