@@ -101,6 +101,9 @@ Channel = 安全室
 
 ![image](https://github.com/user-attachments/assets/f370d4f7-7d71-40d0-89a5-0adec8233355)
 
+## ARDUINO連接演示
+
+![image](https://github.com/user-attachments/assets/7d2bea5e-375a-49f2-9dbe-c2ad04026855)
 
 ## 成果預覽（訓練/推論）
 
