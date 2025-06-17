@@ -122,6 +122,8 @@ FPS	52
 
 ![image](https://github.com/user-attachments/assets/70b801f6-b532-4c67-9088-cfb81dcf58b0)
 
+![image](https://github.com/user-attachments/assets/69ee5ea2-b4fd-4b55-9a8b-9e4bb45fb1ac)
+
 
 https://github.com/user-attachments/assets/2a0fdcb6-c2ef-4011-b429-54e390ead90c
 
