@@ -95,19 +95,20 @@ Channel = 安全室
 
 ## 成果預覽（訓練/推論）
 
-指標	  結果
+![image](https://github.com/user-attachments/assets/ae88c73c-4a34-4778-92cd-ea62e246cbfd)
 
-mAP@0.5	0.160
+![image](https://github.com/user-attachments/assets/3d9c6c16-e3c4-4fe9-820a-215ce4056f78)
 
-Precision	0.65
+![image](https://github.com/user-attachments/assets/22999854-7c0f-445e-b4ea-142d088f0505)
 
-Recall	0.20
+![image](https://github.com/user-attachments/assets/d0fe43dd-7d80-4c5a-853c-fe726db47e8a)
 
-FPS	52
+![image](https://github.com/user-attachments/assets/9ed919f6-74d0-411a-a98e-b41c8de127e1)
 
--多場域測試通過，包括模擬捷運站月台、低光源環境
+![image](https://github.com/user-attachments/assets/fcd836ee-04d4-4e0b-8760-9aaf1399cabb)
 
--圖片標註與事件紀錄皆可導出
+![image](https://github.com/user-attachments/assets/52683c29-313c-4524-964e-020c9f4aef9f)
+
 
 ## 實例截圖
 ![image](https://github.com/user-attachments/assets/4d2f5b13-ce2c-437b-b9f9-09f514ca2a5d)
@@ -124,6 +125,9 @@ FPS	52
 
 ![image](https://github.com/user-attachments/assets/69ee5ea2-b4fd-4b55-9a8b-9e4bb45fb1ac)
 
+## 實例影片
+
+https://github.com/user-attachments/assets/ce19ca1e-e3bc-41ba-9c51-e84a63b94d14
 
 https://github.com/user-attachments/assets/2a0fdcb6-c2ef-4011-b429-54e390ead90c
 
