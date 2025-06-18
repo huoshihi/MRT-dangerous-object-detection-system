@@ -101,9 +101,17 @@ Channel = 安全室
 
 ![image](https://github.com/user-attachments/assets/f370d4f7-7d71-40d0-89a5-0adec8233355)
 
-## ARDUINO連接演示
+## ARDUINO連接演示與實作示範
+
+![image](https://github.com/user-attachments/assets/761f7909-81ae-4544-a80a-d9d58cd64123)
+
+![image](https://github.com/user-attachments/assets/64546cce-9783-4f42-92ad-752b8d19bae6)
 
 ![image](https://github.com/user-attachments/assets/7d2bea5e-375a-49f2-9dbe-c2ad04026855)
+
+## 連接攝影機測試示範
+
+https://github.com/user-attachments/assets/96bd27f9-20b6-4ba6-9735-777ad7dda5f1
 
 ## 成果預覽（訓練/推論）
 
@@ -123,6 +131,7 @@ Channel = 安全室
 
 
 ## 實例截圖
+
 ![image](https://github.com/user-attachments/assets/4d2f5b13-ce2c-437b-b9f9-09f514ca2a5d)
 
 ![image](https://github.com/user-attachments/assets/1694c2f8-300c-4163-9091-39ddde59c695)
