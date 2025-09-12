@@ -1,6 +1,6 @@
-# MRT-dangerous-object-detection-system(YOLOv11)
+# SafeZone 危險偵測防護(YOLOv12)
 
-本系統為一套可部署於捷運站、接運車廂內、工廠、作業場域的危險物品偵測警報系統，整合 YOLOv11 模型、即時影像辨識、RS232 控制停機、Teams 推播與圖片紀錄等模組，達成事件即時辨識與自動化處置。
+本系統為一套可部署於捷運站、接運車廂內、工廠、作業場域的危險物品偵測系統，整合了YOLOv12偵測模型與Mediapipe手部關節套件，運用即時影像辨識技術搭配Arduino連接Led小燈泡和馬達鎖，達成事件發生時的警示與對應的防護措施。
 
 ---
 
@@ -8,26 +8,29 @@
 ```
 ├── main.py                   # 主控系統程式
 ├── demo_yolo_cam.py          # 測試攝影機辨識
-├── config.ini                # 系統參數設定
-├── requirements.txt          # 套件依賴清單
-├── classes.txt               # 類別定義（0: knife）
-├── utils/
-│   ├── notify.py             # Teams & LINE 警報模組
-│   └── rs232.py              # RS232 控制模組
+├── config.ini                # 系統參數與環境設定
+├── requirements.txt          # Mediapipe手部關節套件安裝
 ├── detect.py / capture.py    # YOLO 推理與影像擷取模組（可整合 main.py）
-└── logs/                     # 紀錄辨識結果（圖片與座標）
+├── classes.txt               # 圖像類別定義（0: knife）          
+├── logs/                     # 紀錄辨識結果（圖片與座標）
+├── arduino_code/             # Arduino程式碼與板子設定        
+└── hardware_control/         # Led燈與馬達鎖                 
 ```
 ## 系統功能與特色
 
--YOLOv11 區辨刀械等危險物，支援即時畫面處理
+-YOLOv12 區辨刀械等危險物，支援即時畫面處理
+
+-結合Mediapipe手部關節輔助辨識
 
 -自動儲存偵測畫面與標註 TXT
 
--偵測類別可觸發 Teams 通知
+-連接Arduino板子實務延伸
 
--整合 RS232 停機控制指令
+-Led燈發光達到警示效果
 
--支援 LINE Notify / HTTP API 通知
+-監控人員二次確認後5秒內按下按鈕，避免誤判
+
+-馬達鎖轉開，即可取出櫃子內的物品防身
 
 -自動建立當日紀錄資料夾並分類存檔
 
@@ -42,6 +45,8 @@ Python 版本	Python 3.10 以上
 GPU 支援   	CUDA 11.7 + NVIDIA RTX 3060↑
 
 套件依賴    	OpenCV、PyTorch、Ultralytics、pygame、requests、pypylon 等
+
+Arduino     
 
 ## 安裝與啟動
 ```
@@ -69,25 +74,15 @@ ClassNames = ['knife', 'gun']
 ClassAlarms = [0]          # 類別索引
 ClassSavePictures = [0]
 
-[RS232]
-RS232_stop = True
-RS232_COM = COM3
 
-[TeamsNotify]
-TeamsNotify = True
-Channel = 安全室
 ```
 ## 功能說明
 
 模組	                                    功能描述
 
--Detect_from_img_and_alarm_and_save_img()	模型推理後觸發儲存、標註、Teams 警報、RS232 停機指令
+-Detect_from_img_and_alarm_and_save_img()	模型推理後觸發儲存、標註
 
--Read_Config()	                          讀取 config.ini 並初始化系統參數
-
--send_Teams_notify()	                    發送 JSON 結構 Teams 卡片訊息給指定頻道
-
--STOP_Label()	                            發送 16 bytes 的停機 RS232 指令至 COM PORT
+-Read_Config()	                          讀取 config.ini 並初始化系統參數                  
 
 -line_notify()	                          使用 HTTP API 傳送警報通知
 
