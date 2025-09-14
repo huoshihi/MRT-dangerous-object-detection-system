@@ -99,11 +99,15 @@ pip install torch
 
 ![image](https://github.com/user-attachments/assets/7d2bea5e-375a-49f2-9dbe-c2ad04026855)  
 
+![ad1](https://github.com/user-attachments/assets/8b6b8e75-f150-4abb-9476-15852880248b)
+
 ![ad207280-f9e7-4816-b26d-3daaaca06933](https://github.com/user-attachments/assets/b7d34c2f-db5d-49f2-80de-cec69e792285)
 
 ![ef45a292-412d-4d39-ad03-c0ddd5d7f316](https://github.com/user-attachments/assets/318a3584-f7ea-46c0-bccc-ab43422eb3ea)
 
 ![550e1643-38c9-4e36-9934-58b733430815](https://github.com/user-attachments/assets/be30b35c-715d-4de8-8ba0-f315f69c090b)
+
+![S__46923782](https://github.com/user-attachments/assets/24b69ea8-f22e-430d-8f85-8f7dbbe1c621)
 
 ---
 ## 連接攝影機測試示範
