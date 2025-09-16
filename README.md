@@ -107,12 +107,7 @@ pip install torch
 
 ![550e1643-38c9-4e36-9934-58b733430815](https://github.com/user-attachments/assets/be30b35c-715d-4de8-8ba0-f315f69c090b)
 
-![S__46923782](https://github.com/user-attachments/assets/24b69ea8-f22e-430d-8f85-8f7dbbe1c621)
-
----
-## 連接攝影機測試示範
-
-https://github.com/user-attachments/assets/96bd27f9-20b6-4ba6-9735-777ad7dda5f1
+![S__46923782](https://github.com/user-attachments/assets/24b69ea8-f22e-430d-8f85-8f7dbbe1c621)  
 
 ---
 ## 成果預覽（訓練/推論）
@@ -131,8 +126,6 @@ confidence ≈ 0.4 時，recall 大約能維持在 0.93，代表此區間可以�
 
 <img width="854" height="640" alt="image" src="https://github.com/user-attachments/assets/11596c12-b493-4659-b079-10547f029a78" />  
 
-<img width="853" height="640" alt="image" src="https://github.com/user-attachments/assets/cddd6b4b-9dfb-4d0d-9430-7f623f72953e" />  
-
 從混淆矩陣分析可知，模型在測試資料中 正確檢出的數量（TP）為 1111，誤將背景判為目標（FP）為 121，以及 未檢出的數量（FN）為 101，整體混淆率約 8%，屬於可接受範圍。換算後，precision 約 0.90，recall 約 0.92，與前述 PR 曲線結果一致。從歸一化混淆矩陣可見，模型對正樣本辨識率高達 0.92，對背景的判斷幾乎為 1.0，顯示模型在 背景過濾 上表現非常出色。雖然整體表現優異，但在 降低誤報（FP）方面仍有改善空間，可透過調整 confidence 門檻或強化負樣本訓練來進一步優化。
 
 <img width="875" height="583" alt="image" src="https://github.com/user-attachments/assets/221cba35-d811-4ddc-a8ab-3099eebfcf41" />  
@@ -142,9 +135,9 @@ confidence ≈ 0.4 時，recall 大約能維持在 0.93，代表此區間可以�
 
 <img width="846" height="846" alt="image" src="https://github.com/user-attachments/assets/20de87f0-ec97-4ac0-b81f-f77862545fd8" />  
 
-<img width="891" height="891" alt="image" src="https://github.com/user-attachments/assets/21369ea7-e9fd-475b-8579-a8ae0c2cb64c" />  
+![8000](https://github.com/user-attachments/assets/f236488e-006a-4c9b-8575-9f2ddddf1f27)
 
-這兩張圖展示了專題資料集的分布情況。資料集中約有 4000 筆樣本，但目標物的寬度與高度大多小於影像比例的 0.2，換言之，絕大部分為小物件。這種分布會導致模型在 mAP@0.5:0.95 指標下表現較低，因為高 IoU 標準下，小物件邊界容易受到誤差影響。此外，標註位置大多集中於畫面中間，顯示資料拍攝角度或場景具有一定一致性。整體而言，資料能有效訓練模型辨識目標，但若想提升定位精準度，仍需補充更多小物件、多角度與多樣化場景的樣本，以增強模型在不同情境下的泛化能力。
+這兩張圖展示了專題資料集的分布情況。資料集中約有 8000 筆樣本，但目標物的寬度與高度大多小於影像比例的 0.2，換言之，絕大部分為小物件。這種分布會導致模型在 mAP@0.5:0.95 指標下表現較低，因為高 IoU 標準下，小物件邊界容易受到誤差影響。此外，標註位置大多集中於畫面中間，顯示資料拍攝角度或場景具有一定一致性。整體而言，資料能有效訓練模型辨識目標，但若想提升定位精準度，仍需補充更多小物件、多角度與多樣化場景的樣本，以增強模型在不同情境下的泛化能力。
 
 <img width="891" height="594" alt="image" src="https://github.com/user-attachments/assets/005140b9-4702-40f1-ba5d-ecad30b036b5" />  
 
@@ -152,6 +145,8 @@ confidence ≈ 0.4 時，recall 大約能維持在 0.93，代表此區間可以�
 
 ---
 ## 實例截圖
+
+**資料集卷軸演示**  
 
 <img width="679" height="679" alt="image" src="https://github.com/user-attachments/assets/d4bad218-d56d-486c-bfae-e20244a3a9bf" />
 
@@ -161,8 +156,23 @@ confidence ≈ 0.4 時，recall 大約能維持在 0.93，代表此區間可以�
 
 <img width="773" height="773" alt="image" src="https://github.com/user-attachments/assets/c15fe0b2-f1f8-44de-9421-491bac595d1e" />  
 
+**程式運行報警演示**
+
+![alert1](https://github.com/user-attachments/assets/d5f4ec2e-d561-4a12-aff6-a300e1058e98)  
+
+![alert2](https://github.com/user-attachments/assets/849e82f7-3b0f-4184-bc57-8603ddf37ac5)
+
 ---
-## License
+## 測試示範影片
+
+https://github.com/user-attachments/assets/c10798b5-5038-4603-8ccb-07cfc4302f7c
+
+https://github.com/user-attachments/assets/dc5cc813-33e6-49e6-8efd-240573a6620b
+
+---
+
+## License  
+
 本系統為大學專題開發，授權僅限非商業使用。如需商業應用請與原開發者聯繫取得授權。
 
 ---
@@ -170,7 +180,7 @@ confidence ≈ 0.4 時，recall 大約能維持在 0.93，代表此區間可以�
 
 組長:鄧佳宇
 
-成員:戴育崙、霍世翊、陳瑋澤、蘇逸安、李晟祥
+成員:戴育崙、霍世翊、陳瑋澤、蘇逸安、李晟祥、張亦然
 
 所屬單位：淡江大學 資訊管理學系
 
